@@ -17,7 +17,8 @@ import { Container } from 'semantic-ui-react';
 import config from './config';
 import Home from './Home';
 import CustomLoginComponent from './Login';
-import Messages from './Messages';
+import Token from './Token';
+import VS from './VS';
 import Navbar from './Navbar';
 import Profile from './Profile';
 
@@ -40,8 +41,9 @@ const HasAccessToRouter = () => {
         <Route path="/" exact component={Home} />
         <Route path="/implicit/callback" component={LoginCallback} />
         <Route path="/login" component={CustomLoginComponent} />
-        <SecureRoute path="/messages" component={Messages} />
+        <SecureRoute path="/token" component={Token} />
         <SecureRoute path="/profile" component={Profile} />
+        <SecureRoute path="/test" component={VS} />
       </Container>
     </Security>
   );
