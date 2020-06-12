@@ -29,12 +29,9 @@ const Navbar = () => {
             &nbsp;
             Okta-React Sample Project
           </Menu.Item>
-          {authState.isAuthenticated && (
-          <Menu.Item id="messages-button" as="a" href="/messages">
-            Access Token
-          </Menu.Item>
-          )}
+          {authState.isAuthenticated && <Menu.Item id="access-button" as="a" href="/token">Access Token</Menu.Item>}
           {authState.isAuthenticated && <Menu.Item id="profile-button" as="a" href="/profile">Profile</Menu.Item>}
+          {authState.isAuthenticated && <Menu.Item id="test-button" as="a" href="/test">Vidispine test</Menu.Item>}
           {authState.isAuthenticated && <Menu.Item id="logout-button" as="a" onClick={logout}>Logout</Menu.Item>}
           {!authState.isPending && !authState.isAuthenticated && <Menu.Item as="a" onClick={login}>Login</Menu.Item>}
         </Container>

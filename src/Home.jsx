@@ -80,9 +80,8 @@ const Home = () => {
           <ul>
             {resourceServerExamples.map((example) => <li key={example.url}><a href={example.url}>{example.label}</a></li>)}
           </ul>
-          <p>
-            Once you have downloaded and started the example resource server, you can visit the
-            <a href="/messages">My Messages</a>
+          <p>            
+            <a href="/test">Vidispine test</a>
             {' '}
             page to see the authentication process in action.
           </p>
