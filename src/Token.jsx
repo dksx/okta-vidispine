@@ -22,7 +22,6 @@ const Messages = () => {
   useEffect(() => {
     if (authState.isAuthenticated) {
       const { accessToken } = authState;
-      console.log(accessToken);
       setToken(accessToken);
     }
   }, [authState]);

@@ -25,7 +25,6 @@ const Profile = () => {
     } else {
       authService.getUser().then((info) => {
         setUserInfo(info);
-        console.log(info);
       });
     }
   }, [authState, authService]); // Update if authState changes

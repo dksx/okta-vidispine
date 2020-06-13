@@ -13,9 +13,9 @@
 import axios from 'axios';
 import { useOktaAuth } from '@okta/okta-react';
 import React, { useState, useEffect } from 'react';
-import { Button, Input, Header, Icon,} from 'semantic-ui-react';
+import { Button, Input, Header, Icon, } from 'semantic-ui-react';
 
-const Messages = () => {
+const VS = () => {
   const { authState } = useOktaAuth();
   const [token, setToken] = useState(null);
   const [vaas, setVaas] = useState('');
@@ -25,7 +25,6 @@ const Messages = () => {
   useEffect(() => {
     if (authState.isAuthenticated) {
       const { accessToken } = authState;
-      console.log(accessToken);
       setToken(accessToken);
     }
   }, [authState]);
@@ -33,14 +32,12 @@ const Messages = () => {
   const getVersion = async () => {
 
     const options = {
-      headers: { "Authorization": `Bearer ${token}`},
-      params: { vaasUrl : `https://${vaas}/API/version`},
+      headers: { "Authorization": `Bearer ${token}`, 'Accept': 'text/plain' },
     };
 
-    try { //http://13.49.64.255
-      const upload = await axios.get(`https://aurora-dev.myvidispine.com/API/version`, options);
-      setVersion(String(upload.data));
-      console.log(upload);
+    try {
+      const upload = await axios.get(`https://${vaas}/API/version`, options);
+      setVersion(upload.data);
     } catch (error) {
       setVersion(String(error));
     }
@@ -49,15 +46,14 @@ const Messages = () => {
   return (
     <div>
       <Header as="h1">
-        <Icon name="user secret"/>
+        <Icon name="user secret" />
         Vidispine test call
       </Header>
-      <Input style={{width:'100%', marginTop: '1rem'}} onChange={e => setVaas(e.target.value)} label='https://' placeholder='myvidispine.com' />
-      <Button onClick={(getVersion)} style={{marginTop:'1rem'}} color='teal'>Get Version</Button>
-      <div style={{whiteSpace: 'pre-line', marginTop: '1rem'}}>{version}</div>
-      
+      <Input style={{ width: '100%', marginTop: '1rem' }} onChange={e => setVaas(e.target.value)} label='https://' placeholder='xxx.myvidispine.com' />
+      <Button onClick={(getVersion)} style={{ marginTop: '1rem' }} color='teal'>Get Version</Button>
+      <div style={{ whiteSpace: 'pre-line', marginTop: '1rem' }}>{version}</div>
     </div>
   );
 };
 
-export default Messages;
+export default VS;
