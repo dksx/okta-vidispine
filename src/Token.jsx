@@ -33,7 +33,7 @@ const Messages = () => {
         <Icon name="user secret"/>
         Access Token
       </Header>
-      <div style={{'word-break': 'break-all'}}>
+      <div style={{'wordBreak': 'break-all'}}>
         <strong>
         {token}
         </strong>
