@@ -34,13 +34,15 @@ const Messages = () => {
 
     const options = {
       headers: { "Authorization": `Bearer ${token}`},
+      params: { vaasUrl : `https://${vaas}/API/version`},
     };
 
-    try {
-      const upload = await axios.get(`https://${vaas}`, options);
-      setVersion(JSON.Astringify(upload));
+    try { //http://13.49.64.255
+      const upload = await axios.get(`https://aurora-dev.myvidispine.com/API/version`, options);
+      setVersion(String(upload.data));
+      console.log(upload);
     } catch (error) {
-      console.error(error);
+      setVersion(String(error));
     }
   };
 
@@ -52,7 +54,8 @@ const Messages = () => {
       </Header>
       <Input style={{width:'100%', marginTop: '1rem'}} onChange={e => setVaas(e.target.value)} label='https://' placeholder='myvidispine.com' />
       <Button onClick={(getVersion)} style={{marginTop:'1rem'}} color='teal'>Get Version</Button>
-      {version}
+      <div style={{whiteSpace: 'pre-line', marginTop: '1rem'}}>{version}</div>
+      
     </div>
   );
 };
