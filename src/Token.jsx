@@ -29,7 +29,7 @@ const Messages = () => {
   return (
     <div>
       <Header as="h1">
-        <Icon name="user secret"/>
+        <Icon name="spy"/>
         Access Token
       </Header>
       <div style={{'wordBreak': 'break-all'}}>

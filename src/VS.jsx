@@ -30,13 +30,13 @@ const VS = () => {
   }, [authState]);
 
   const getVersion = async () => {
-
     const options = {
       headers: { "Authorization": `Bearer ${token}`, 'Accept': 'text/plain' },
     };
 
     try {
-      const upload = await axios.get(`https://${vaas}/API/version`, options);
+      const vidispineDomain = `${vaas}/API/version`;
+      const upload = await axios.get(vidispineDomain, options);
       setVersion(upload.data);
     } catch (error) {
       setVersion(String(error));
@@ -46,10 +46,10 @@ const VS = () => {
   return (
     <div>
       <Header as="h1">
-        <Icon name="user secret" />
+        <Icon name="terminal" />
         Vidispine test call
       </Header>
-      <Input style={{ width: '100%', marginTop: '1rem' }} onChange={e => setVaas(e.target.value)} label='https://' placeholder='xxx.myvidispine.com' />
+      <Input style={{ width: '100%', marginTop: '1rem' }} onChange={e => setVaas(e.target.value)} placeholder='https://asdf.myvidispine.com' />
       <Button onClick={(getVersion)} style={{ marginTop: '1rem' }} color='teal'>Get Version</Button>
       <div style={{ whiteSpace: 'pre-line', marginTop: '1rem' }}>{version}</div>
     </div>
