@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/okta-vidispine/static/css/main.29f06e3a.chunk.css",
+    "main.js": "/okta-vidispine/static/js/main.e422041e.chunk.js",
+    "main.js.map": "/okta-vidispine/static/js/main.e422041e.chunk.js.map",
+    "runtime-main.js": "/okta-vidispine/static/js/runtime-main.4a00144e.js",
+    "runtime-main.js.map": "/okta-vidispine/static/js/runtime-main.4a00144e.js.map",
+    "static/css/2.f9b8cb33.chunk.css": "/okta-vidispine/static/css/2.f9b8cb33.chunk.css",
+    "static/js/2.f80e8b0c.chunk.js": "/okta-vidispine/static/js/2.f80e8b0c.chunk.js",
+    "static/js/2.f80e8b0c.chunk.js.map": "/okta-vidispine/static/js/2.f80e8b0c.chunk.js.map",
+    "index.html": "/okta-vidispine/index.html",
+    "precache-manifest.2046bad039dd57a2c882b3333a550f67.js": "/okta-vidispine/precache-manifest.2046bad039dd57a2c882b3333a550f67.js",
+    "service-worker.js": "/okta-vidispine/service-worker.js",
+    "static/css/2.f9b8cb33.chunk.css.map": "/okta-vidispine/static/css/2.f9b8cb33.chunk.css.map",
+    "static/css/main.29f06e3a.chunk.css.map": "/okta-vidispine/static/css/main.29f06e3a.chunk.css.map",
+    "static/js/2.f80e8b0c.chunk.js.LICENSE.txt": "/okta-vidispine/static/js/2.f80e8b0c.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/okta-vidispine/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/okta-sign-in.min.css": "/okta-vidispine/static/media/yubikeyDemo.f10c9db1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a00144e.js",
+    "static/css/2.f9b8cb33.chunk.css",
+    "static/js/2.f80e8b0c.chunk.js",
+    "static/css/main.29f06e3a.chunk.css",
+    "static/js/main.e422041e.chunk.js"
+  ]
+}
