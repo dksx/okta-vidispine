@@ -30,7 +30,7 @@ const Home = () => {
   }, [authState, authService]); // Update if authState changes
 
   const login = async () => {
-    authService.login('/');
+    authService.login('/okta-vidispine/');
   };
 
   const resourceServerExamples = [
@@ -70,7 +70,7 @@ const Home = () => {
             You have successfully authenticated against your Okta org, and have been redirected back to this application.  You now have an ID token and access token in local storage.
             Visit the
             {' '}
-            <a href="/profile">My Profile</a>
+            <a href="/okta-vidispine/profile">My Profile</a>
             {' '}
             page to take a look inside the ID token.
           </p>
@@ -81,7 +81,7 @@ const Home = () => {
             {resourceServerExamples.map((example) => <li key={example.url}><a href={example.url}>{example.label}</a></li>)}
           </ul>
           <p>            
-            <a href="/test">Vidispine test</a>
+            <a href="/okta-vidispine/test">Vidispine test</a>
             {' '}
             page to see the authentication process in action.
           </p>

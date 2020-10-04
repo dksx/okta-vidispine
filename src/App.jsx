@@ -28,7 +28,7 @@ const HasAccessToRouter = () => {
 
   const customAuthHandler = () => {
     // Redirect to the /login page that has a CustomLoginComponent
-    history.push('/login');
+    history.push('/okta-vidispine/login');
   };
 
   return (
@@ -38,12 +38,12 @@ const HasAccessToRouter = () => {
     >
       <Navbar />
       <Container text style={{ marginTop: '7em', width: '100%', height: '100%' }}>
-        <Route path="/" exact component={Home} />
-        <Route path="/implicit/callback" component={LoginCallback} />
-        <Route path="/login" component={CustomLoginComponent} />
-        <SecureRoute path="/token" component={Token} />
-        <SecureRoute path="/profile" component={Profile} />
-        <SecureRoute path="/test" component={VS} />
+        <Route path="/okta-vidispine/" exact component={Home} />
+        <Route path="/okta-vidispine/implicit/callback" component={LoginCallback} />
+        <Route path="/okta-vidispine/login" component={CustomLoginComponent} />
+        <SecureRoute path="/okta-vidispine/token" component={Token} />
+        <SecureRoute path="/okta-vidispine/profile" component={Profile} />
+        <SecureRoute path="/okta-vidispine/test" component={VS} />
       </Container>
     </Security>
   );

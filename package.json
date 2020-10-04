@@ -1,7 +1,8 @@
 {
-  "name": "samples-js-react",
+  "name": "okta-vidispine",
   "version": "0.2.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://dksx.github.io/okta-vidispine",
   "dependencies": {
     "@okta/okta-react": "^3.0.0",
     "@okta/okta-signin-widget": "^3.9.0",
@@ -25,6 +26,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "h": "^1.0.0",
     "react-app-rewired": "^2.1.5",
     "source-map-loader": "^0.2.4"
