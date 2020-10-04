@@ -21,7 +21,6 @@ const VS = () => {
   const [vaas, setVaas] = useState('');
   const [version, setVersion] = useState(null);
 
-  // fetch messages
   useEffect(() => {
     if (authState.isAuthenticated) {
       const { accessToken } = authState;
