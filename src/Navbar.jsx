@@ -18,7 +18,7 @@ const Navbar = () => {
   const { authState, authService } = useOktaAuth();
 
   const login = async () => authService.login('/okta-vidispine/');
-  const logout = async () => authService.logout('/okta-vidispine/');
+  const logout = async () => authService.logout('https://dksx.github.io/okta-vidispine/');
 
   return (
     <div>
