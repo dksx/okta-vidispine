@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/okta-vidispine/precache-manifest.ea181d1411bb7fd1add549e97b6e87e6.js"
+  "/okta-vidispine/precache-manifest.5ebb821b70a5d0cfa11f234529b9f6e3.js"
 );
 
 self.addEventListener('message', (event) => {
