@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/okta-vidispine/static/css/main.29f06e3a.chunk.css",
-    "main.js": "/okta-vidispine/static/js/main.6421615a.chunk.js",
-    "main.js.map": "/okta-vidispine/static/js/main.6421615a.chunk.js.map",
+    "main.js": "/okta-vidispine/static/js/main.4a709d2e.chunk.js",
+    "main.js.map": "/okta-vidispine/static/js/main.4a709d2e.chunk.js.map",
     "runtime-main.js": "/okta-vidispine/static/js/runtime-main.4a00144e.js",
     "runtime-main.js.map": "/okta-vidispine/static/js/runtime-main.4a00144e.js.map",
     "static/css/2.f9b8cb33.chunk.css": "/okta-vidispine/static/css/2.f9b8cb33.chunk.css",
     "static/js/2.f80e8b0c.chunk.js": "/okta-vidispine/static/js/2.f80e8b0c.chunk.js",
     "static/js/2.f80e8b0c.chunk.js.map": "/okta-vidispine/static/js/2.f80e8b0c.chunk.js.map",
     "index.html": "/okta-vidispine/index.html",
-    "precache-manifest.79a4e88fddd2b6db2f8e93b422ec7718.js": "/okta-vidispine/precache-manifest.79a4e88fddd2b6db2f8e93b422ec7718.js",
+    "precache-manifest.ea181d1411bb7fd1add549e97b6e87e6.js": "/okta-vidispine/precache-manifest.ea181d1411bb7fd1add549e97b6e87e6.js",
     "service-worker.js": "/okta-vidispine/service-worker.js",
     "static/css/2.f9b8cb33.chunk.css.map": "/okta-vidispine/static/css/2.f9b8cb33.chunk.css.map",
     "static/css/main.29f06e3a.chunk.css.map": "/okta-vidispine/static/css/main.29f06e3a.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.f9b8cb33.chunk.css",
     "static/js/2.f80e8b0c.chunk.js",
     "static/css/main.29f06e3a.chunk.css",
-    "static/js/main.6421615a.chunk.js"
+    "static/js/main.4a709d2e.chunk.js"
   ]
 }
