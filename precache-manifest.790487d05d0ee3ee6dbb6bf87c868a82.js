@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bcbaac500c30a7103ca06cd492c55f8e",
+    "revision": "069d3b45a6caccbd4c59344d429d4de1",
     "url": "/okta-vidispine/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/okta-vidispine/static/css/2.f9b8cb33.chunk.css"
   },
   {
-    "revision": "7fec02a902fdcc96a921",
+    "revision": "38ad30ab117f2b1ff3ad",
     "url": "/okta-vidispine/static/css/main.29f06e3a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/okta-vidispine/static/js/2.f80e8b0c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7fec02a902fdcc96a921",
-    "url": "/okta-vidispine/static/js/main.e422041e.chunk.js"
+    "revision": "38ad30ab117f2b1ff3ad",
+    "url": "/okta-vidispine/static/js/main.23e5c7a6.chunk.js"
   },
   {
     "revision": "0e82b01eec6b6aa636dc",
